@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+/*
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+
+以下、要編集箇所
+
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+*/
+
+/*========================================================================
+　要編集①：
+	.mktoForm .mktoFormRow:nth-of-type(-)の()内の数字を
+	「姓」と「名」の項目が、上から何番目かによって変更してください。
+========================================================================*/
+
+.mktoForm .mktoFormRow:nth-of-type(2)/*←ここ*/ .mktoFormCol:first-of-type {
+	width: 49%;
+	float: left;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(2)/*←ここ*/ .mktoFormCol:nth-of-type(2) {
+	width: 49%;
+	float: right;
+	clear: initial;
+}
+
+/*========================================================================
+　要編集②：
+	.mktoForm .mktoFormRow:nth-last-of-type(-)の()内の数字を
+	「個人情報に関する同意」のテキストと「プライバシーポリシーおよび…」のテキストが、
+	下から何番目の.mktoFormRowであるかによって変更してください。
+========================================================================*/
+
+.mktoForm .mktoFormRow:nth-last-of-type(1)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(2)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(3)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(4)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(5)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(6)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(7)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(8)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(9)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(10)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(11)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(12)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(13)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(14)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(15)/*←ここ*/,
+.mktoForm .mktoFormRow:nth-last-of-type(16)/*←ここ*/{
+	margin-bottom: 0;
+}
+
+/*
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+
+以上、要編集箇所
+
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+*/
+
+/*============================================
+
+.mktoForm内のfont設定
+
+============================================*/
+
+.mktoForm * {
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  	font-weight: 500; 
+}
+
+/*============================================
+
+横幅の設定
+
+============================================*/
+
+.mktoHasWidth {
+	width: 100% !important;
+}
+
+/*============================================
+
+Row と Col Col内 の基本設定
+
+============================================*/
+
+.mktoForm .mktoFormRow {
+	margin-bottom: 24px;
+}
+
+.mktoForm .mktoFormRow .mktoFormCol {
+	width: 100%;
+	margin-bottom: 0 !important;
+}
+
+.mktoOffset {
+	display: none;
+}
+
+.mktoForm .mktoFormRow .mktoFormCol .mktoRequiredField {
+	width: 100%;
+	font-size: 18px;
+	padding: 0;
+	padding-bottom: 0px;
+}
+
+.mktoForm .mktoFormRow .mktoFormCol .mktoTextField {
+	width: 100%;
+}
+
+.mktoAsterix {
+	padding: 0 !important;
+	padding-right: 10px !important;
+	float: left !important;
+}
+
+.mktoField .mktoTextField .mktoRequired {
+	width: 100%;
+}
+
+.mktoForm .mktoFieldWrap {
+	width: 100%;
+}
+
+/*============================================
+
+入力項目名のスタイル設定
+
+============================================*/
+
+.mktoForm .mktoLabel {
+	padding: 0;
+	padding-bottom: 8px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333333;
+}
+
+.mktoForm .mktoFormRow .mktoFormCol .mktoGutter {
+	display: none;
+}
+
+/*============================================
+
+各入力部分のスタイル設定
+
+============================================*/
+
+.mktoForm .mktoFormRow .mktoFormCol input {
+	width: 100%;
+	font-size: 15px;
+	height: 46px;
+	border: 1px solid #e9e9e9;
+	padding-left: 20px;
+	border-radius: 0;
+}
+
+.mktoForm .mktoFormRow .mktoFormCol select {
+  	width: 100%;
+	font-size: 15px;
+	height: 46px;
+	border: 1px solid #e9e9e9;
+	padding-left: 20px;
+	border-radius: 0;
+}
+
+.mktoForm .mktoFormRow .mktoFormCol textarea {
+    width: 100%;
+	font-size: 15px;
+	border: 1px solid #e9e9e9;
+	padding-left: 20px;
+	border-radius: 0;
+}
+
+/*============================================
+
+個人情報に関する同意のスタイル設定
+
+============================================*/
+
+#privacy {
+	width: 20px;
+}
+
+#self_employed {
+	width: 20px;
+}
+
+#requestForConsultation {
+	width: 20px;
+}
+
+.mktoForm .mktoFormRow .mktoFormCol .mktoHtmlText {
+	border: 1px solid #e9e9e9;
+	padding: 20px;
+}
+
+/*============================================
+
+送信ボタンの設定
+
+============================================*/
+
+.mktoForm .mktoButtonRow {
+	width: 100%;
+}
+
+.mktoForm .mktoButtonRow .mktoButtonWrap {
+	margin: 0;
+}
+
+.mktoForm .mktoButtonRow .mktoButtonWrap .mktoButton {
+	display: block;
+	line-height: 70px;
+	font-size: 18px !important;
+	font-weight: bold;
+	width: 280px !important;
+	border: none !important;
+	border-radius: 10px !important;
+	padding: 0 !important;
+	margin: auto !important;
+	
+	background: 
+		url(https://ferret-one.akamaized.net/images/5d2ec6bef875dd60e30024f8/original.png) 
+		top 28px right 35px no-repeat,
+		#ff690c !important; 
+	background-size: 20px !important;
+	transition: opacity 0.3s ease-out;
+}
+
+.mktoForm .mktoButtonRow .mktoButtonWrap .mktoButton:hover {
+	opacity: 0.5;
+}
+
+/*============================================
+
+ボタンの上の無駄な高さを排除
+
+============================================*/
+
+.mktoForm .mktoFormRow:last-of-type,
+.mktoForm .mktoFormRow:nth-last-of-type(2),
+.mktoForm .mktoFormRow:nth-last-of-type(3) {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  
+ .mktoForm textarea.mktoField {
+	height: 136px;
+}
+  
+}
